@@ -1,8 +1,76 @@
-<h1>	
-	<%= @hostel.name %>
-</h1>
+<div class = "row">	
+	<div class = "span7">
+		<h1><%= @hostel.name %> - <%= @hostel.location %> </h1>  
+		<p><p><%= @hostel.desription %></p></p>
+	</div>
 
 
+	<div id="myCarousel" class="carousel slide span5" style="height:200px;width:450px;">
+	      <div class="carousel-inner">
+	        <div class="item active" style="height:200px;width:450px;">
+	          <img src="/assets/connect.jpg" alt="">
+	          <div class="container">
+	            <div class="carousel-caption">
+	              
+	              <center> <p class="lead">Great people</p></center>
+	             
+	            </div>
+	          </div>
+	        </div>
+	        <div class="item" style="height:200px;width:450px;">
+	          <img src="/assets/museum.jpg" alt="">
+	          <div class="container">
+	            <div class="carousel-caption">
+	              
 
+	              <center> <p class="lead">Fun things to do</p></center>
+	              
+	            </div>
+	          </div>
+	        </div>
+	        <div class="item" style="height:200px;width:450px;">
+	          <img src="/assets/nice.jpg" alt="">
+	          <div class="container">
+	            <div class="carousel-caption">
+	              
+	             <center> <p class="lead">Great times</p></center>
+	              
+	            </div>
+	          </div>
+	        </div>
+	      </div>
+	      <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+	      <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+	</div>
+
+</div>
+
+<div class = "row">
+	<em>
+	<div class = "span2">
+		Hostelemail@email.com		
+	</div>
+	
+	<div class = "span2">
+		+1 (617) 749-0291 		
+	</div>
+
+	<div class = "span3">
+		13 Stuart Street Boston, MA		
+	</div>
+	</em>
+	<div> 
+	
+</div>
+
+<br>
+<div class = "well">
+
+	<%= render :partial =>"hostels/shared/post_feed" %>
+
+
+</div>
+
+<br>
 <!-- List all posts -->
-<%= render :partial =>"hostels/shared/post_feed" %>
+
