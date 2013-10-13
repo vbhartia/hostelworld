@@ -8,6 +8,8 @@ Hostelconnect::Application.routes.draw do
 
   get 'hostels/:id' => "hostels#particular_hostel", as: 'particular_hostel'
 
+  get 'about' => "static_pages#about"
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
