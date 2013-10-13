@@ -31,6 +31,7 @@
                
               </ul>
             </div><!--/.nav-collapse -->
+	          
 	          <!--right login -->
 	          <ul class="nav pull-right">
 
@@ -40,8 +41,7 @@
 	                <table>
 	                  <tr>
 	                    <td>           
-	                    	User Settings      
-
+	                    	User Settings     
 	                    </td>
 	              
 	                    <td>                
@@ -69,18 +69,13 @@
 
 
           </div><!-- /.navbar-inner -->
+		</div><!-- /.navbar-inverse -->
+    </div><!-- /.container -->
+
+  </div> 
 
 
-      </div>
-    </div>
-  </div>
-
-
-
-        </div><!-- /.navbar -->
-
-      </div> <!-- /.container -->
-    </div>
+    <%= link_to "Log Out", destroy_user_session_path, method: :delete %>
 
 	<div class="container">
 

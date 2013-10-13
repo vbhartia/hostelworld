@@ -11,3 +11,17 @@
  *= require_self
  *= require_tree .
  */
+
+
+.post_box
+{
+	background-color:yellow;
+
+}
+
+
+.padding
+{
+	background-color:yellow;
+
+}
