@@ -42,19 +42,64 @@
                 </li>
               </ul>
             </div><!--/.nav-collapse -->
+	          <!--right login -->
+	          <ul class="nav pull-right">
+
+	            <div id="fat-menu" class="dropdown">
+	              <a href="#" id="drop3" role="button" class="dropdown-toggle" data-toggle="dropdown">
+
+	                <table>
+	                  <tr>
+	                    <td>           
+	                    	User Settings      
+
+	                    </td>
+	              
+	                    <td>                
+	                      <b class="caret"></b>
+	                    </td>
+	                  </tr>
+	                </table>
+
+	              </a>
+
+	              <ul class="dropdown-menu" role="menu" aria-labelledby="drop3">
+
+	                  <li><%= link_to "Sign Up", new_user_registration_path %></li>
+
+	                  <li><%= link_to "Sign in", new_user_session_path %>
+	                  </li>
+
+	                  <li><%= link_to "Log Out", destroy_user_session_path, method: :delete %>
+	                  </li>
+
+	              </ul>
+	            </div>
+
+	        </ul>
+
+
           </div><!-- /.navbar-inner -->
+
+
+      </div>
+    </div>
+  </div>
+
+
+
         </div><!-- /.navbar -->
 
       </div> <!-- /.container -->
     </div>
 
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+	<div class="container">
 
+	    <p class="notice"><%= notice %></p>
+	    <p class="alert"><%= alert %></p>
 
-
-
-	<%= yield %>
+		<%= yield %>
+	</div>
 
 
 
