@@ -2,14 +2,7 @@
 	<%= @hostel.name %>
 </h1>
 
-<br/>
-
-Some stuff is going here!!
 
 
-<% @hostel.posts.each do |post| %>
-	<br/>
-	Post Text: <%= post.text %>
-	<%= post.user.email %>
-	<br/>
-<% end %>
+<!-- List all posts -->
+<%= render :partial =>"hostels/shared/post_feed" %>

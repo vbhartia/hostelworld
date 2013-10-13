@@ -1,0 +1,33 @@
+POST FEED!!
+	
+<br/>
+
+<table class="table table-bordered">
+
+	<% @hostel.posts.each do |post| %>
+		<!-- List individual Posts -->
+		<table>
+			<tr>
+				<td>
+					<%= post.user.email %>
+					<br/>	
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<%= post.text %>	
+				</td>
+			</tr>
+
+		</table>
+
+
+
+		<br/>
+		Post Text: <%= post.text %>
+		<%= post.user.email %>
+		<br/>
+
+	<% end %>
+
+</table>
