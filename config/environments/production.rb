@@ -67,5 +67,5 @@ Hostelconnect::Application.configure do
   # with SQLite, MySQL, and PostgreSQL)
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
 
-  config.action_dispatch.x_sendfile_header = nil
+  #config.action_dispatch.x_sendfile_header = nil
 end
