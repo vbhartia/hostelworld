@@ -1,0 +1,43 @@
+List of all Hostels
+
+<table id="table_id">
+  <thead>
+    <tr>
+
+
+      <th>Hostel</th>
+
+      <th>Description</th>
+
+      <th>Location</th>
+
+    </tr>
+  </thead>  
+
+  <tbody>
+    <% @Hostels.each do |hostel| %>
+      <tr>
+        
+        <!-- Hostel Name -->
+        <td>        
+          <div class='cell_headline'>
+          		<%= link_to hostel.name, particular_hostel_path(hostel.id) %>
+       
+          	
+       
+          </div>
+
+        </td>
+
+        <td>
+          <%= hostel.desription %>
+    	</td>
+
+        <td>
+          <%= hostel.location %>
+    	</td>
+
+      </tr>
+    <% end %>
+  </tbody>
+</table>

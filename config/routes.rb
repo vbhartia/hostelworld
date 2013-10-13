@@ -4,6 +4,10 @@ Hostelconnect::Application.routes.draw do
 
   root :to => "static_pages#home_page"
 
+  get 'hostels' => "hostels#list", as: 'all_hostels'
+
+  get 'hostels/:id' => "hostels#particular_hostel", as: 'particular_hostel'
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
